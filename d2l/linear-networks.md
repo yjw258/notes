@@ -94,6 +94,6 @@ $$
 
 #### 1.4.1 神经网络图
 
-![3.1.2](https://github.com/yjw258/notes/tree/main/d2l/figs/3.1.2.png)
+![3.1.2](https://github.com/yjw258/notes/raw/main/d2l/figs/3.1.2.png)
 
 #### 1.4.2 生物学
