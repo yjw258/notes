@@ -643,37 +643,33 @@ tensor(6.)
 矩阵 $A\in R^{m\times n}$，向量 $x\in R^n$，矩阵-向量积 **torch.mv()** ：
 $$
 A=
-\left[
-\begin{array}{l}
-a_1^T\\
-a_2^T\\
-\ \ \vdots\\
-a_m^T
-\end{array}
-\right]
+\begin{bmatrix}
+&a_1^T&\\
+&a_2^T&\\
+&\vdots&\\
+&a_m^T&
+\end{bmatrix}
 $$
 
 $$
 Ax=
-\left[
-\begin{array}{l}
-a_1^T\\
-a_2^T\\
-\ \ \vdots\\
-a_m^T
-\end{array}
-\right]
+\begin{bmatrix}
+&a_1^T&\\
+&a_2^T&\\
+&\vdots&\\
+&a_m^T&
+\end{bmatrix}
 x
 =
-\left[
-\begin{array}{l}
-a_1^Tx\\
-a_2^Tx\\
-\ \ \ \vdots\\
-a_m^Tx
-\end{array}
-\right]
+\begin{bmatrix}
+&a_1^Tx&\\
+&a_2^Tx&\\
+&\vdots&\\
+&a_m^Tx&
+\end{bmatrix}
 $$
+
+
 
 ```python
 A.shape, x.shape, torch.mv(A, x)
