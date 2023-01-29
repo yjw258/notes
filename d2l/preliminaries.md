@@ -763,7 +763,7 @@ tensor(6.)
 
 ### 4.3 梯度
 
-设函数 $f:R^n\rightarrow R$ 的输入是一个n维向量 $x=[x_1,x_2,\cdots,x_n]^T$ ，并且输出是一个标量、函数 $f(x)$ 相对于 **x** 的梯度是一个包含n个偏导数的向量：$\nabla_xf(x)=[\frac{\partial f(x)}{\partial x_1},\frac{\partial f(x)}{\partial x_2},\cdots,\frac{\partial f(x)}{\partial x_n}]^T$ 。
+设函数 $f:R^n\rightarrow R$ 的输入是一个n维向量 $x=[x_1,x_2,\cdots,x_n]^T$ ，并且输出是一个标量、函数 $f(x)$ 相对于 **x** 的梯度是一个包含n个偏导数的向量： $\nabla_xf(x)=[\frac{\partial f(x)}{\partial x_1},\frac{\partial f(x)}{\partial x_2},\cdots,\frac{\partial f(x)}{\partial x_n}]^T$ 。
 
 $\frac{\partial y}{\partial x}$ ：
 
@@ -771,7 +771,7 @@ $\frac{\partial y}{\partial x}$ ：
 
 * **y** 是向量，x 是标量： $\frac{\partial y}{\partial x}=[\frac{\partial y_1}{\partial x},\frac{\partial y_2}{\partial x},\cdots,\frac{\partial y_m}{\partial x}]^T$ 
 
-* **y** 和 **x** 都是向量：
+* **y** 和 **x** 都是向量： 
   $$
   \frac{\partial y}{\partial x}=
   \begin{bmatrix}
