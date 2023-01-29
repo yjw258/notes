@@ -767,9 +767,9 @@ tensor(6.)
 
 $\frac{\partial y}{\partial x}$ ：
 
-* y是标量，**x** 是向量：$\frac{\partial y}{\partial x}=[\frac{\partial y}{\partial x_1},\frac{\partial y}{\partial x_2},\cdots,\frac{\partial y}{\partial x_n}]$
+* y是标量，**x** 是向量： $\frac{\partial y}{\partial x}=[\frac{\partial y}{\partial x_1},\frac{\partial y}{\partial x_2},\cdots,\frac{\partial y}{\partial x_n}]$ 
 
-* **y** 是向量，x 是标量：$\frac{\partial y}{\partial x}=[\frac{\partial y_1}{\partial x},\frac{\partial y_2}{\partial x},\cdots,\frac{\partial y_m}{\partial x}]^T$
+* **y** 是向量，x 是标量： $\frac{\partial y}{\partial x}=[\frac{\partial y_1}{\partial x},\frac{\partial y_2}{\partial x},\cdots,\frac{\partial y_m}{\partial x}]^T$ 
 
 * **y** 和 **x** 都是向量：
   $$
@@ -779,8 +779,7 @@ $\frac{\partial y}{\partial x}$ ：
   \frac{\partial y_2}{\partial x}\\
   \vdots\\
   \frac{\partial y_m}{\partial x}
-  \end{bmatrix}
-  =
+  \end{bmatrix}=
   \begin{bmatrix}
   &\frac{\partial y_1}{\partial x_1},&\frac{\partial y_1}{\partial x_2},&\cdots,&\frac{\partial y_1}{\partial x_n}\\
   &\frac{\partial y_2}{\partial x_1},&\frac{\partial y_2}{\partial x_2},&\cdots,&\frac{\partial y_2}{\partial x_n}\\
@@ -795,7 +794,7 @@ $\frac{\partial y}{\partial x}$ ：
 * 对于所有 $A\in R^{n\times m}，都有 \nabla_xx^TA=A$
 * 对于所有 $A\in R^{n\times n},都有 \nabla_xx^TAx=(A+A^T)x$
 * $\nabla_x||x||^2=\nabla_xx^Tx=2x$ 
-* 同样，对于任何矩阵 $X$，都有$\nabla_X||X||^2_F=2X$ 
+* 同样，对于任何矩阵 $X$，都有 $\nabla_X||X||^2_F=2X$  
 
 ### 4.4 链式法则
 
