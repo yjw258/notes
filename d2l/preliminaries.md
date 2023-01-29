@@ -617,7 +617,7 @@ tensor([[[ 0,  1,  2,  3],
 
 ### 3.7 点积
 
-给定两个向量 $x,y\in R^d$，它们的点积 $x^Ty(或<x,y>)$ 是相同位置的按元素乘积的和：$x^Ty=\sum_{i=1}^{d}x_iy_i$ 。**torch.dot()**：
+给定两个向量 $x,y\in R^d$，它们的点积 $x^Ty(或<x,y>)$ 是相同位置的按元素乘积的和：  $x^Ty=\sum_{i=1}^{d}x_iy_i$ 。**torch.dot()**：
 
 ```python
 y = torch.ones(4, dtype = torch.float32)
@@ -659,8 +659,7 @@ Ax=
 &\vdots&\\
 &a_m^T&
 \end{bmatrix}
-x
-=
+x=
 \begin{bmatrix}
 &a_1^Tx&\\
 &a_2^Tx&\\
@@ -707,7 +706,7 @@ tensor([[ 6.,  6.,  6.],
 * $f(x)\ge 0$
 * 范数最小为0，当且仅当向量全由0组成
 
-欧几里得距离是一个 $L_2$ 范数：$||x||_2=||x||=\sqrt{\sum_{i=1}^{n}x_i^2}$ 。用 **torch.norm()** 计算向量的范数：
+欧几里得距离是一个 $L_2$ 范数： $||x||_2=||x||=\sqrt{\sum_{i=1}^{n}x_i^2}$ 。用 **torch.norm()** 计算向量的范数：
 
 ```python
 u = torch.tensor([3.0, -4.0])
@@ -718,7 +717,7 @@ torch.norm(u)
 tensor(5.)
 ```
 
-$L_1$ 范数，表示为向量元素的绝对值之和。$||x||_1=\sum_{i=1}^{n}|x_i|$ ：
+$L_1$ 范数，表示为向量元素的绝对值之和。 $||x||_1=\sum_{i=1}^{n}|x_i|$ ：
 
 ```python
 torch.abs(u).sum()
@@ -728,13 +727,15 @@ torch.abs(u).sum()
 tensor(7.)
 ```
 
-一般地，$L_p$ 范数：$||x||_p=(\sum_{i=1}^{n}|x_i|^p)^{1/p}$
+一般地，$L_p$ 范数： $||x||_p=(\sum_{i=1}^{n}|x_i|^p)^{1/p}$ 
 
-类似于向量的 $L_2$ 范数，矩阵 $X\in R^{m\times n}$ 的Frobenius范数 $||X||_F=\sqrt{\sum_{i=1}^{m}\sum_{j=1}^{n}x_{ij}^2}$ ：
+类似于向量的 $L_2$ 范数，矩阵 $X\in R^{m\times n}$ 的Frobenius范数  $||X||_F=\sqrt{\sum_{i=1}^{m}\sum_{j=1}^{n}x_{ij}^2}$ ：
 
 ```python
 torch.norm(torch.ones((4, 9)))
 ```
+
+
 
 ```
 tensor(6.)
@@ -742,10 +743,10 @@ tensor(6.)
 
 ### 3.11 特殊矩阵
 
-* 对称矩阵和反对称矩阵：$A_{ij}=A_{ji}\ and\ A_{ij}=-A_{ji}$
-* 正定矩阵：设M是n阶方阵，如果对任何非零向量 $z$，都有$z^TMz>0$，其中 $z^T$ 表示 $z$ 的转置，就称M为正定矩阵
+* 对称矩阵和反对称矩阵： $A_{ij}=A_{ji}\ and\ A_{ij}=-A_{ji}$ 
+* 正定矩阵：设M是n阶方阵，如果对任何非零向量 $z$，都有 $z^TMz>0$ ，其中 $z^T$ 表示 $z$ 的转置，就称M为正定矩阵
 * 正交矩阵：所有行都互相正交、所有行都有单位长度，可以写成 $UU^T=I$ 
-* 置换矩阵：$P\ where\ P_{ij}=1\ if\ and\ only\ if\ j=\pi(i)$ ，一定是正交矩阵
+* 置换矩阵：  $P\ where\ P_{ij}=1\ if\ and\ only\ if\ j=\pi(i)$ ，一定是正交矩阵
 
 ### 3.12 特征值和特征向量
 
